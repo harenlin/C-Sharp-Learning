@@ -16,5 +16,8 @@
 # mcs StringFormatting.cs
 # mono StringFormatting.exe
 
-mcs StringCompare.cs
-mono StringCompare.exe
+# mcs StringCompare.cs
+# mono StringCompare.exe
+
+mcs Array.cs
+mono Array.exe
