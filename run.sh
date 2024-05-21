@@ -22,5 +22,8 @@
 # mcs Array.cs
 # mono Array.exe
 
-mcs List.cs
-mono List.exe
+# mcs List.cs
+# mono List.exe
+
+mcs Dictionary.cs
+mono Dictionary.exe
