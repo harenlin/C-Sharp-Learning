@@ -61,7 +61,6 @@ class Array {
 			Console.WriteLine("Number is not found!");
 		}
 
-		/*
 		// Declaration of a 2D array
 		int[,] matrix = new int[3, 3]; 
 		// Assigning values to other elements of the matrix
@@ -79,6 +78,5 @@ class Array {
 				Console.Write(matrix[i, j] + " ");
 			} Console.WriteLine();
 		}
-		*/
 	}
 }

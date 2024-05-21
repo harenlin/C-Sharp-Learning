@@ -19,5 +19,8 @@
 # mcs StringCompare.cs
 # mono StringCompare.exe
 
-mcs Array.cs
-mono Array.exe
+# mcs Array.cs
+# mono Array.exe
+
+mcs List.cs
+mono List.exe
