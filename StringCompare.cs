@@ -11,7 +11,8 @@ class StringCompare {
 		Console.WriteLine("Type your name again: ");
 		string name2 = Console.ReadLine();
 		
-		if( !name1.Equals(name2) || name1.Equals("") || name2.Equals("") ){
+		// if( !name1.Equals(name2) || name1.Equals("") || name2.Equals("") ){
+		if( !name1.Equals(name2) || string.IsNullOrEmpty(name1) || string.IsNullOrEmpty(name2) ){
 			Console.WriteLine("Name Inonsistent or Invalid input!");
 		} else {
 			Console.WriteLine("Name Consistent!");
