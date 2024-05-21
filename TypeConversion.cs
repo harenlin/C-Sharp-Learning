@@ -1,6 +1,6 @@
 using System;
 
-class HelloWorld {
+class TypeConversion {
 	static void Main(string[] args){
 		Console.WriteLine("======================================");
 		Console.WriteLine("Data Types Conversion");

@@ -2,7 +2,7 @@ using System;
 
 // Premitive data types
 
-class HelloWorld {
+class DataType {
 	static void Main(string[] args){
 		Console.WriteLine("======================================");
 		Console.WriteLine("Premitive data types");

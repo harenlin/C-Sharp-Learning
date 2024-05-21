@@ -1,6 +1,6 @@
 using System;
 
-class HelloWorld {
+class StringFormatting {
 	static void Main(string[] args){
 		Console.WriteLine("======================================");
 		Console.WriteLine("String Formatting");
