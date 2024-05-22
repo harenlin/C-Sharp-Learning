@@ -31,5 +31,11 @@
 # mcs Reference.cs
 # mono Reference.exe
 
-mcs Exception.cs
-mono Exception.exe
+# mcs Exception.cs
+# mono Exception.exe
+
+# mcs Structure.cs
+# mono Structure.exe
+
+mcs Class.cs
+mono Class.exe
