@@ -28,10 +28,17 @@ class ToString {
 		}
 
 		public override bool Equals(object obj){
-			if(obj is Person){
+			/*if(obj is Person){
 				Person person = obj as Person;
 				return this.Name.Equals(person.Name) && this.Age == person.Age;
-			} return false;
+			} return false; */
+			try {
+				Person person = obj as Person;
+				return this.Name.Equals(person.Name) && this.Age == person.Age;
+			} catch (System.Exception e) {
+				Console.WriteLine($"{e.Message}");
+				return false;
+			}
 		}
 
 		public override int GetHashCode(){
