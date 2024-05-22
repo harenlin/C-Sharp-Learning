@@ -7,18 +7,20 @@ class Class {
 		public int age;
 
 		// default constructor
-		public Person(){}
+		public Person(){
+			this.name = "";
+			this.age = -1;
+		}
 		
 		// constructor
 		public Person(string name, int age){
 			this.name = name;
 			this.age = age;
 		}
-	}
 
-	static void createPerson(string name, int age, ref Person person){
-		person.name = name;
-		person.age = age;
+		public void selfIntro(){
+			Console.WriteLine($"Hi everyone! My name is {this.name} and my lucky number is {this.age}!");
+		}
 	}
 
 	static void Main(string[] args){
@@ -31,19 +33,8 @@ class Class {
 		Console.Write("Enter your age: ");
 		int input_age = Convert.ToInt32(Console.ReadLine());
 		
-		Person person1 = new Person();
-		createPerson(input_name, input_age, ref person1);
-		Console.WriteLine($"{person1.name} - {person1.age}");
-
-		Console.WriteLine("======================================");
-
-		Console.Write("Enter your name: ");
-		input_name = Console.ReadLine();
-		Console.Write("Enter your age: ");
-		input_age = Convert.ToInt32(Console.ReadLine());
-		
-		Person person2 = new Person(input_name, input_age);
-		Console.WriteLine($"{person2.name} - {person2.age}");
-		
+		Person person1 = new Person(input_name, input_age);
+		// Console.WriteLine($"{person1.name} - {person1.age}");
+		person1.selfIntro();
 	}
 }
