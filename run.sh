@@ -40,5 +40,8 @@
 # mcs Class.cs
 # mono Class.exe
 
-mcs ClassProperty.cs
-mono ClassProperty.exe
+# mcs ClassProperty.cs
+# mono ClassProperty.exe
+
+mcs ToString.cs
+mono ToString.exe
