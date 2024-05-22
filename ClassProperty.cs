@@ -1,22 +1,47 @@
 using System;
 
-class Class {
+class ClassProperty {
 
 	class Person {
-		public string name;
-		public int age;
+		private string name;
+		private int age;
 
-		// default constructor
 		public Person(){
 			this.name = "";
 			this.age = -1;
 		}
 		
-		// constructor
 		public Person(string name, int age){
 			this.name = name;
 			this.age = age;
 		}
+
+		// class proterties
+		/* public string Name
+		{
+			get 
+			{
+				return this.name;
+			}
+			set 
+			{
+				this.name = value;
+			}
+		} */
+		public string Name { get => this.name; set => this.name = value; }
+
+		/* public int Age
+		{
+			get 
+			{
+				return this.age;
+			}
+			set 
+			{
+				this.age = value;
+			}
+		} */
+		public int Age { get => this.age; set => this.age = value; }
 
 		public void selfIntro(){
 			Console.WriteLine($"Hi everyone! My name is {this.name} and my lucky number is {this.age}!");
@@ -25,7 +50,7 @@ class Class {
 
 	static void Main(string[] args){
 		Console.WriteLine("======================================");
-		Console.WriteLine("Class");
+		Console.WriteLine("Class Property");
 		Console.WriteLine("======================================");
 
 		string input_name = "";
@@ -50,8 +75,9 @@ class Class {
 			}
 		}
 		
-		Person person1 = new Person(input_name, input_age);
-		// Console.WriteLine($"{person1.name} - {person1.age}");
-		person1.selfIntro();
+		Person person1 = new Person();
+		person1.Name = input_name;
+		person1.Age = input_age;
+		Console.WriteLine($"{person1.Name} - {person1.Age}");
 	}
 }

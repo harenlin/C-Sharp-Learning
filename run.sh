@@ -37,5 +37,8 @@
 # mcs Structure.cs
 # mono Structure.exe
 
-mcs Class.cs
-mono Class.exe
+# mcs Class.cs
+# mono Class.exe
+
+mcs ClassProperty.cs
+mono ClassProperty.exe
