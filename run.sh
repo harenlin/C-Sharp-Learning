@@ -25,5 +25,11 @@
 # mcs List.cs
 # mono List.exe
 
-mcs Dictionary.cs
-mono Dictionary.exe
+# mcs Dictionary.cs
+# mono Dictionary.exe
+
+# mcs Reference.cs
+# mono Reference.exe
+
+mcs Exception.cs
+mono Exception.exe
