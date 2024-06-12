@@ -19,3 +19,10 @@ rm *.exe
 csc Car.cs Vehicle.cs CarProgram.cs 
 mono CarProgram.exe
 ```
+
+Part 4. virtual / abstract / override
+```
+rm *.exe
+csc ShapeProgram.cs
+mono ShapeProgram.exe
+```
