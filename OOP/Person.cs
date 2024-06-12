@@ -2,22 +2,24 @@ using System;
 
 public class Person
 {
-    // Properties of the Person class
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public DateTime DateOfBirth { get; set; }
+    public string firstName { get; set; }
+    public string lastName { get; set; }
+    protected DateTime _dateOfBirth { get; private set; }
+	// C# Coding Convention: the private variable should have a underline prefix.
     
-    // Constructor for the Person class
     public Person(string firstName, string lastName, DateTime dateOfBirth)
     {
-        FirstName = firstName;
-        LastName = lastName;
-        DateOfBirth = dateOfBirth;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this._dateOfBirth = dateOfBirth;
     }
+
+    public DateTime getDateOfBirth(){
+		return this._dateOfBirth;
+	} 
     
-    // Method to get the full name
     public string GetFullName()
     {
-        return $"{FirstName} {LastName}";
+        return $"{firstName} {lastName}";
     }
 }

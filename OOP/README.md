@@ -1,9 +1,13 @@
-### How TO Run
-1. Compile.
+### How TO Run?
+Part 1.
 ```
 csc Person.cs Customer.cs Program.cs
-```
-2. Run the executable file.
-```
 mono Program.exe
+```
+
+Part 2.
+```
+rm Http*
+csc Http*
+mono HttpProgram.exe
 ```
