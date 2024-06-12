@@ -1,5 +1,5 @@
-### How TO Run?
-Part 1.
+### How To Run?
+Part 1. 
 ```
 rm *.exe
 csc Person.cs Customer.cs Program.cs
