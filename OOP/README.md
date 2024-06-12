@@ -1,5 +1,5 @@
 ### How To Run?
-Part 1. 
+Part 1. Inheritance
 ```
 rm *.exe
 csc Person.cs Customer.cs Program.cs
@@ -13,7 +13,7 @@ csc Http*
 mono HttpProgram.exe
 ```
 
-Part 3.
+Part 3. Up/Down-Casting
 ```
 rm *.exe
 csc Car.cs Vehicle.cs CarProgram.cs 
