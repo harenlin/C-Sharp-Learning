@@ -33,3 +33,10 @@ rm *.exe
 csc Message.cs INotificationChannel.cs SmsNotificationChannel.cs MailNotificationChannel.cs PolymorphismInterface.cs
 mono PolymorphismInterface.exe
 ```
+
+Part 6. Stack and Queue
+```
+rm *.exe
+csc Stack.cs Queue.cs StackQueueProgram.cs
+mono StackQueueProgram.exe
+```
