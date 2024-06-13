@@ -26,3 +26,10 @@ rm *.exe
 csc ShapeProgram.cs
 mono ShapeProgram.exe
 ```
+
+Part 5. Interface and Polymorphism
+```
+rm *.exe
+csc Message.cs INotificationChannel.cs SmsNotificationChannel.cs MailNotificationChannel.cs PolymorphismInterface.cs
+mono PolymorphismInterface.exe
+```
