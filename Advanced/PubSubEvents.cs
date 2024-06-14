@@ -38,7 +38,7 @@ public class MailSubscriber {
         publisher.MessageEvent += HandleMessageEvent;
     }
 
-    private void HandleMessageEvent(object sender, MessageEventArgs e) {
+    public void HandleMessageEvent(object sender, MessageEventArgs e) {
         Console.WriteLine($"MailSubscriber {_name} received message: {e.Message}");
     }
 }
@@ -51,7 +51,7 @@ public class SMSSubscriber {
         publisher.MessageEvent += HandleMessageEvent;
     }
 
-    private void HandleMessageEvent(object sender, MessageEventArgs e) {
+    public void HandleMessageEvent(object sender, MessageEventArgs e) {
         Console.WriteLine($"SMSSubscriber {_name} received message: {e.Message}");
     }
 }
@@ -63,6 +63,9 @@ class PubSubEvents {
 
         MailSubscriber mailSub = new MailSubscriber("mail no-reply@irvine.com", publisher);
         SMSSubscriber smsSub = new SMSSubscriber("sms 92620", publisher);
+
+		// publisher.MessageEvent += mailSub.HandleMessageEvent;
+		// publisher.MessageEvent += smsSub.HandleMessageEvent;
 
         publisher.PublishMessage("Hello, World!");
         publisher.PublishMessage("Another message");
