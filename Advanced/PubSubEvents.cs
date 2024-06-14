@@ -33,6 +33,10 @@ public class Publisher {
 public class MailSubscriber {
     private readonly string _name;
 
+    public MailSubscriber(string name) {
+        _name = name;
+    }
+
     public MailSubscriber(string name, Publisher publisher) {
         _name = name;
         publisher.MessageEvent += HandleMessageEvent;
@@ -45,6 +49,10 @@ public class MailSubscriber {
 
 public class SMSSubscriber {
     private readonly string _name;
+    
+	public SMSSubscriber(string name) {
+        _name = name;
+    }
 
     public SMSSubscriber(string name, Publisher publisher) {
         _name = name;
